@@ -1,0 +1,926 @@
+037: level=1 duration=275 us, level=0 duration=298 us
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006206
+--- 0x42006206: uart_ll_get_txfifo_len at C:/esp/v6.0.1/esp-idf/components/esp_hal_uart/esp32c3/include/hal/uart_ll.h:429
+--- (inlined by) uart_tx_char at C:/esp/v6.0.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fbc
+entry 0x403cbf1a
+I (24) boot: ESP-IDF v6.0.1 2nd stage bootloader
+I (24) boot: compile time Sep 28 2026 21:25:10
+I (25) boot: chip revision: v0.4
+I (26) boot: efuse block revision: v1.3
+I (28) boot.esp32c3: SPI Speed      : 80MHz
+I (32) boot.esp32c3: SPI Mode       : DIO
+I (36) boot.esp32c3: SPI Flash Size : 2MB
+I (39) boot: Enabling RNG early entropy source...
+I (44) boot: Partition Table:
+I (46) boot: ## Label            Usage          Type ST Offset   Length
+I (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (66) boot:  2 factory          factory app      00 00 00010000 00100000
+I (72) boot: End of partition table
+I (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=088e0h ( 35040) map
+I (89) esp_image: segment 1: paddr=00018908 vaddr=3fc8a000 size=018b8h (  6328) load
+I (92) esp_image: segment 2: paddr=0001a1c8 vaddr=40380000 size=05e50h ( 24144) load
+I (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=120e0h ( 73952) map
+I (117) esp_image: segment 4: paddr=00032108 vaddr=40385e50 size=03fa4h ( 16292) load
+I (121) esp_image: segment 5: paddr=000360b4 vaddr=50000000 size=00024h (    36) load
+I (125) boot: Loaded app from partition at offset 0x10000
+I (126) boot: Disabling RNG early entropy source...
+I (142) cpu_start: Unicore app
+I (150) cpu_start: GPIO 20 and 21 are used as console UART I/O pins
+I (151) cpu_start: Pro cpu start user code
+I (151) cpu_start: cpu freq: 160000000 Hz
+I (152) app_init: Application information:
+I (156) app_init: Project name:     ir_receiver
+I (160) app_init: App version:      1
+I (164) app_init: Compile time:     Sep 28 2026 21:24:30
+I (169) app_init: ELF file SHA256:  891eb2825...
+I (173) app_init: ESP-IDF:          v6.0.1
+I (177) efuse_init: Min chip rev:     v0.3
+I (181) efuse_init: Max chip rev:     v1.99 
+I (185) efuse_init: Chip rev:         v0.4
+I (189) heap_init: Initializing. RAM available for dynamic allocation:
+I (195) heap_init: At 3FC8CA70 len 00033590 (205 KiB): RAM
+I (200) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM
+I (207) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM
+I (213) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM
+I (218) spi_flash: detected chip: generic
+I (221) spi_flash: flash io: dio
+W (224) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (237) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (243) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (250) main_task: Started on CPU0
+I (250) main_task: Calling app_main()
+I (250) RF_RECEIVER: RF receiver ready on GPIO3
+I (260) RF_RECEIVER: Press one remote button at a time
+
+Captured 17 RMT symbols:
+000: level=1 duration=88 us, level=0 duration=239 us
+001: level=1 duration=145 us, level=0 duration=2118 us
+002: level=1 duration=143 us, level=0 duration=1806 us
+003: level=1 duration=90 us, level=0 duration=249 us
+004: level=1 duration=143 us, level=0 duration=125 us
+005: level=1 duration=74 us, level=0 duration=52 us
+006: level=1 duration=93 us, level=0 duration=2926 us
+007: level=1 duration=1232 us, level=0 duration=59 us
+008: level=1 duration=3340 us, level=0 duration=322 us
+009: level=1 duration=3336 us, level=0 duration=964 us
+010: level=1 duration=3344 us, level=0 duration=1538 us
+011: level=1 duration=3334 us, level=0 duration=349 us
+012: level=1 duration=3330 us, level=0 duration=746 us
+013: level=1 duration=3319 us, level=0 duration=280 us
+014: level=1 duration=3317 us, level=0 duration=214 us
+015: level=1 duration=3325 us, level=0 duration=189 us
+016: level=1 duration=3315 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3315 us, level=1 duration=0 us
+End frame
+
+
+Captured 63 RMT symbols:
+000: level=1 duration=188 us, level=0 duration=55 us
+001: level=1 duration=746 us, level=0 duration=94 us
+002: level=1 duration=213 us, level=0 duration=44 us
+003: level=1 duration=176 us, level=0 duration=50 us
+004: level=1 duration=784 us, level=0 duration=34 us
+005: level=1 duration=1331 us, level=0 duration=50 us
+006: level=1 duration=1459 us, level=0 duration=46 us
+007: level=1 duration=526 us, level=0 duration=29 us
+008: level=1 duration=504 us, level=0 duration=73 us
+009: level=1 duration=275 us, level=0 duration=42 us
+010: level=1 duration=453 us, level=0 duration=224 us
+011: level=1 duration=231 us, level=0 duration=61 us
+012: level=1 duration=93 us, level=0 duration=44 us
+013: level=1 duration=215 us, level=0 duration=123 us
+014: level=1 duration=198 us, level=0 duration=32 us
+015: level=1 duration=697 us, level=0 duration=48 us
+016: level=1 duration=520 us, level=0 duration=42 us
+017: level=1 duration=487 us, level=0 duration=55 us
+018: level=1 duration=262 us, level=0 duration=275 us
+019: level=1 duration=81 us, level=0 duration=57 us
+020: level=1 duration=915 us, level=0 duration=50 us
+021: level=1 duration=595 us, level=0 duration=58 us
+022: level=1 duration=125 us, level=0 duration=43 us
+023: level=1 duration=152 us, level=0 duration=68 us
+024: level=1 duration=290 us, level=0 duration=179 us
+025: level=1 duration=78 us, level=0 duration=40 us
+026: level=1 duration=249 us, level=0 duration=168 us
+027: level=1 duration=367 us, level=0 duration=66 us
+028: level=1 duration=135 us, level=0 duration=61 us
+029: level=1 duration=294 us, level=0 duration=83 us
+030: level=1 duration=716 us, level=0 duration=79 us
+031: level=1 duration=1323 us, level=0 duration=46 us
+032: level=1 duration=133 us, level=0 duration=59 us
+033: level=1 duration=669 us, level=0 duration=53 us
+034: level=1 duration=464 us, level=0 duration=55 us
+035: level=1 duration=227 us, level=0 duration=32 us
+036: level=1 duration=204 us, level=0 duration=58 us
+037: level=1 duration=923 us, level=0 duration=91 us
+038: level=1 duration=133 us, level=0 duration=158 us
+039: level=1 duration=431 us, level=0 duration=53 us
+040: level=1 duration=367 us, level=0 duration=52 us
+041: level=1 duration=345 us, level=0 duration=40 us
+042: level=1 duration=665 us, level=0 duration=60 us
+043: level=1 duration=1008 us, level=0 duration=84 us
+044: level=1 duration=260 us, level=0 duration=168 us
+045: level=1 duration=524 us, level=0 duration=52 us
+046: level=1 duration=97 us, level=0 duration=68 us
+047: level=1 duration=269 us, level=0 duration=84 us
+048: level=1 duration=111 us, level=0 duration=83 us
+049: level=1 duration=422 us, level=0 duration=89 us
+050: level=1 duration=64 us, level=0 duration=155 us
+051: level=1 duration=212 us, level=0 duration=39 us
+052: level=1 duration=188 us, level=0 duration=38 us
+053: level=1 duration=95 us, level=0 duration=206 us
+054: level=1 duration=838 us, level=0 duration=73 us
+055: level=1 duration=195 us, level=0 duration=151 us
+056: level=1 duration=127 us, level=0 duration=47 us
+057: level=1 duration=345 us, level=0 duration=77 us
+058: level=1 duration=247 us, level=0 duration=127 us
+059: level=1 duration=150 us, level=0 duration=34 us
+060: level=1 duration=211 us, level=0 duration=123 us
+061: level=1 duration=59 us, level=0 duration=127 us
+062: level=1 duration=3386 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3401 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3402 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=1 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=0 duration=35 us, level=1 duration=11891 us
+001: level=0 duration=0 us, level=1 duration=11891 us
+End frame
+
+
+Captured 128 RMT symbols:
+000: level=1 duration=206 us, level=0 duration=367 us
+001: level=1 duration=124 us, level=0 duration=81 us
+002: level=1 duration=152 us, level=0 duration=42 us
+003: level=1 duration=173 us, level=0 duration=208 us
+004: level=1 duration=116 us, level=0 duration=55 us
+005: level=1 duration=178 us, level=0 duration=332 us
+006: level=1 duration=71 us, level=0 duration=576 us
+007: level=1 duration=152 us, level=0 duration=610 us
+008: level=1 duration=91 us, level=0 duration=292 us
+009: level=1 duration=212 us, level=0 duration=47 us
+010: level=1 duration=232 us, level=0 duration=191 us
+011: level=1 duration=105 us, level=0 duration=551 us
+012: level=1 duration=144 us, level=0 duration=205 us
+013: level=1 duration=157 us, level=0 duration=195 us
+014: level=1 duration=86 us, level=0 duration=137 us
+015: level=1 duration=90 us, level=0 duration=124 us
+016: level=1 duration=55 us, level=0 duration=59 us
+017: level=1 duration=160 us, level=0 duration=332 us
+018: level=1 duration=147 us, level=0 duration=184 us
+019: level=1 duration=96 us, level=0 duration=273 us
+020: level=1 duration=128 us, level=0 duration=41 us
+021: level=1 duration=139 us, level=0 duration=46 us
+022: level=1 duration=113 us, level=0 duration=42 us
+023: level=1 duration=183 us, level=0 duration=48 us
+024: level=1 duration=165 us, level=0 duration=144 us
+025: level=1 duration=115 us, level=0 duration=181 us
+026: level=1 duration=170 us, level=0 duration=309 us
+027: level=1 duration=164 us, level=0 duration=44 us
+028: level=1 duration=444 us, level=0 duration=50 us
+029: level=1 duration=291 us, level=0 duration=67 us
+030: level=1 duration=221 us, level=0 duration=408 us
+031: level=1 duration=303 us, level=0 duration=487 us
+032: level=1 duration=109 us, level=0 duration=949 us
+033: level=1 duration=133 us, level=0 duration=70 us
+034: level=1 duration=103 us, level=0 duration=48 us
+035: level=1 duration=130 us, level=0 duration=154 us
+036: level=1 duration=63 us, level=0 duration=41 us
+037: level=1 duration=202 us, level=0 duration=189 us
+038: level=1 duration=220 us, level=0 duration=238 us
+039: level=1 duration=409 us, level=0 duration=58 us
+040: level=1 duration=1114 us, level=0 duration=883 us
+041: level=1 duration=208 us, level=0 duration=143 us
+042: level=1 duration=90 us, level=0 duration=224 us
+043: level=1 duration=234 us, level=0 duration=50 us
+044: level=1 duration=135 us, level=0 duration=46 us
+045: level=1 duration=87 us, level=0 duration=115 us
+046: level=1 duration=328 us, level=0 duration=180 us
+047: level=1 duration=201 us, level=0 duration=696 us
+048: level=1 duration=170 us, level=0 duration=1124 us
+049: level=1 duration=134 us, level=0 duration=617 us
+050: level=1 duration=100 us, level=0 duration=301 us
+051: level=1 duration=121 us, level=0 duration=54 us
+052: level=1 duration=71 us, level=0 duration=45 us
+053: level=1 duration=137 us, level=0 duration=74 us
+054: level=1 duration=72 us, level=0 duration=783 us
+055: level=1 duration=153 us, level=0 duration=150 us
+056: level=1 duration=301 us, level=0 duration=136 us
+057: level=1 duration=127 us, level=0 duration=206 us
+058: level=1 duration=91 us, level=0 duration=50 us
+059: level=1 duration=113 us, level=0 duration=272 us
+060: level=1 duration=141 us, level=0 duration=60 us
+061: level=1 duration=106 us, level=0 duration=147 us
+062: level=1 duration=98 us, level=0 duration=891 us
+063: level=1 duration=95 us, level=0 duration=419 us
+064: level=1 duration=229 us, level=0 duration=38 us
+065: level=1 duration=105 us, level=0 duration=74 us
+066: level=1 duration=220 us, level=0 duration=68 us
+067: level=1 duration=91 us, level=0 duration=91 us
+068: level=1 duration=411 us, level=0 duration=40 us
+069: level=1 duration=217 us, level=0 duration=93 us
+070: level=1 duration=147 us, level=0 duration=72 us
+071: level=1 duration=181 us, level=0 duration=462 us
+072: level=1 duration=236 us, level=0 duration=90 us
+073: level=1 duration=28 us, level=0 duration=48 us
+074: level=1 duration=67 us, level=0 duration=54 us
+075: level=1 duration=97 us, level=0 duration=51 us
+076: level=1 duration=235 us, level=0 duration=594 us
+077: level=1 duration=262 us, level=0 duration=351 us
+078: level=1 duration=223 us, level=0 duration=42 us
+079: level=1 duration=149 us, level=0 duration=956 us
+080: level=1 duration=83 us, level=0 duration=955 us
+081: level=1 duration=97 us, level=0 duration=399 us
+082: level=1 duration=78 us, level=0 duration=143 us
+083: level=1 duration=92 us, level=0 duration=393 us
+084: level=1 duration=168 us, level=0 duration=58 us
+085: level=1 duration=85 us, level=0 duration=66 us
+086: level=1 duration=123 us, level=0 duration=88 us
+087: level=1 duration=152 us, level=0 duration=204 us
+088: level=1 duration=90 us, level=0 duration=588 us
+089: level=1 duration=102 us, level=0 duration=420 us
+090: level=1 duration=111 us, level=0 duration=221 us
+091: level=1 duration=71 us, level=0 duration=68 us
+092: level=1 duration=149 us, level=0 duration=48 us
+093: level=1 duration=80 us, level=0 duration=86 us
+094: level=1 duration=78 us, level=0 duration=85 us
+095: level=1 duration=88 us, level=0 duration=83 us
+096: level=1 duration=94 us, level=0 duration=288 us
+097: level=1 duration=140 us, level=0 duration=1066 us
+098: level=1 duration=159 us, level=0 duration=614 us
+099: level=1 duration=274 us, level=0 duration=157 us
+100: level=1 duration=121 us, level=0 duration=132 us
+101: level=1 duration=114 us, level=0 duration=1722 us
+102: level=1 duration=101 us, level=0 duration=39 us
+103: level=1 duration=72 us, level=0 duration=384 us
+104: level=1 duration=106 us, level=0 duration=1042 us
+105: level=1 duration=95 us, level=0 duration=306 us
+106: level=1 duration=76 us, level=0 duration=311 us
+107: level=1 duration=107 us, level=0 duration=54 us
+108: level=1 duration=186 us, level=0 duration=64 us
+109: level=1 duration=128 us, level=0 duration=604 us
+110: level=1 duration=112 us, level=0 duration=1256 us
+111: level=1 duration=89 us, level=0 duration=468 us
+112: level=1 duration=147 us, level=0 duration=54 us
+113: level=1 duration=211 us, level=0 duration=54 us
+114: level=1 duration=105 us, level=0 duration=68 us
+115: level=1 duration=92 us, level=0 duration=45 us
+116: level=1 duration=86 us, level=0 duration=228 us
+117: level=1 duration=68 us, level=0 duration=99 us
+118: level=1 duration=350 us, level=0 duration=52 us
+119: level=1 duration=141 us, level=0 duration=134 us
+120: level=1 duration=157 us, level=0 duration=424 us
+121: level=1 duration=202 us, level=0 duration=487 us
+122: level=1 duration=74 us, level=0 duration=1602 us
+123: level=1 duration=127 us, level=0 duration=1096 us
+124: level=1 duration=97 us, level=0 duration=61 us
+125: level=1 duration=133 us, level=0 duration=55 us
+126: level=1 duration=150 us, level=0 duration=142 us
+127: level=1 duration=124 us, level=0 duration=192 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3386 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=1 duration=0 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=1 duration=75 us, level=0 duration=3985 us
+001: level=1 duration=3379 us, level=0 duration=0 us
+End frame
+
+
+Captured 128 RMT symbols:
+000: level=1 duration=1534 us, level=0 duration=34 us
+001: level=1 duration=473 us, level=0 duration=45 us
+002: level=1 duration=812 us, level=0 duration=54 us
+003: level=1 duration=1419 us, level=0 duration=45 us
+004: level=1 duration=467 us, level=0 duration=46 us
+005: level=1 duration=182 us, level=0 duration=42 us
+006: level=1 duration=374 us, level=0 duration=69 us
+007: level=1 duration=128 us, level=0 duration=50 us
+008: level=1 duration=230 us, level=0 duration=264 us
+009: level=1 duration=669 us, level=0 duration=49 us
+010: level=1 duration=1693 us, level=0 duration=132 us
+011: level=1 duration=703 us, level=0 duration=51 us
+012: level=1 duration=433 us, level=0 duration=122 us
+013: level=1 duration=913 us, level=0 duration=83 us
+014: level=1 duration=175 us, level=0 duration=316 us
+015: level=1 duration=178 us, level=0 duration=45 us
+016: level=1 duration=852 us, level=0 duration=75 us
+017: level=1 duration=430 us, level=0 duration=44 us
+018: level=1 duration=313 us, level=0 duration=51 us
+019: level=1 duration=559 us, level=0 duration=32 us
+020: level=1 duration=758 us, level=0 duration=43 us
+021: level=1 duration=2188 us, level=0 duration=68 us
+022: level=1 duration=184 us, level=0 duration=41 us
+023: level=1 duration=338 us, level=0 duration=331 us
+024: level=1 duration=168 us, level=0 duration=65 us
+025: level=1 duration=227 us, level=0 duration=47 us
+026: level=1 duration=232 us, level=0 duration=46 us
+027: level=1 duration=192 us, level=0 duration=51 us
+028: level=1 duration=296 us, level=0 duration=57 us
+029: level=1 duration=277 us, level=0 duration=66 us
+030: level=1 duration=1272 us, level=0 duration=36 us
+031: level=1 duration=119 us, level=0 duration=40 us
+032: level=1 duration=325 us, level=0 duration=42 us
+033: level=1 duration=1522 us, level=0 duration=40 us
+034: level=1 duration=467 us, level=0 duration=44 us
+035: level=1 duration=678 us, level=0 duration=107 us
+036: level=1 duration=122 us, level=0 duration=176 us
+037: level=1 duration=124 us, level=0 duration=382 us
+038: level=1 duration=330 us, level=0 duration=55 us
+039: level=1 duration=570 us, level=0 duration=48 us
+040: level=1 duration=898 us, level=0 duration=56 us
+041: level=1 duration=614 us, level=0 duration=43 us
+042: level=1 duration=151 us, level=0 duration=39 us
+043: level=1 duration=342 us, level=0 duration=44 us
+044: level=1 duration=460 us, level=0 duration=57 us
+045: level=1 duration=223 us, level=0 duration=52 us
+046: level=1 duration=299 us, level=0 duration=53 us
+047: level=1 duration=242 us, level=0 duration=43 us
+048: level=1 duration=147 us, level=0 duration=42 us
+049: level=1 duration=336 us, level=0 duration=34 us
+050: level=1 duration=396 us, level=0 duration=44 us
+051: level=1 duration=151 us, level=0 duration=46 us
+052: level=1 duration=127 us, level=0 duration=253 us
+053: level=1 duration=130 us, level=0 duration=32 us
+054: level=1 duration=506 us, level=0 duration=202 us
+055: level=1 duration=273 us, level=0 duration=60 us
+056: level=1 duration=257 us, level=0 duration=81 us
+057: level=1 duration=139 us, level=0 duration=57 us
+058: level=1 duration=242 us, level=0 duration=150 us
+059: level=1 duration=143 us, level=0 duration=450 us
+060: level=1 duration=120 us, level=0 duration=72 us
+061: level=1 duration=489 us, level=0 duration=42 us
+062: level=1 duration=117 us, level=0 duration=59 us
+063: level=1 duration=513 us, level=0 duration=54 us
+064: level=1 duration=141 us, level=0 duration=116 us
+065: level=1 duration=90 us, level=0 duration=272 us
+066: level=1 duration=441 us, level=0 duration=64 us
+067: level=1 duration=245 us, level=0 duration=431 us
+068: level=1 duration=261 us, level=0 duration=80 us
+069: level=1 duration=145 us, level=0 duration=261 us
+070: level=1 duration=206 us, level=0 duration=55 us
+071: level=1 duration=163 us, level=0 duration=66 us
+072: level=1 duration=187 us, level=0 duration=193 us
+073: level=1 duration=210 us, level=0 duration=79 us
+074: level=1 duration=164 us, level=0 duration=46 us
+075: level=1 duration=868 us, level=0 duration=70 us
+076: level=1 duration=175 us, level=0 duration=38 us
+077: level=1 duration=149 us, level=0 duration=52 us
+078: level=1 duration=153 us, level=0 duration=57 us
+079: level=1 duration=268 us, level=0 duration=216 us
+080: level=1 duration=471 us, level=0 duration=129 us
+081: level=1 duration=570 us, level=0 duration=208 us
+082: level=1 duration=306 us, level=0 duration=87 us
+083: level=1 duration=286 us, level=0 duration=83 us
+084: level=1 duration=295 us, level=0 duration=57 us
+085: level=1 duration=376 us, level=0 duration=38 us
+086: level=1 duration=317 us, level=0 duration=57 us
+087: level=1 duration=225 us, level=0 duration=38 us
+088: level=1 duration=186 us, level=0 duration=51 us
+089: level=1 duration=141 us, level=0 duration=42 us
+090: level=1 duration=100 us, level=0 duration=44 us
+091: level=1 duration=980 us, level=0 duration=237 us
+092: level=1 duration=235 us, level=0 duration=38 us
+093: level=1 duration=123 us, level=0 duration=190 us
+094: level=1 duration=135 us, level=0 duration=47 us
+095: level=1 duration=288 us, level=0 duration=97 us
+096: level=1 duration=96 us, level=0 duration=59 us
+097: level=1 duration=257 us, level=0 duration=29 us
+098: level=1 duration=102 us, level=0 duration=105 us
+099: level=1 duration=90 us, level=0 duration=299 us
+100: level=1 duration=89 us, level=0 duration=754 us
+101: level=1 duration=119 us, level=0 duration=423 us
+102: level=1 duration=135 us, level=0 duration=540 us
+103: level=1 duration=108 us, level=0 duration=124 us
+104: level=1 duration=145 us, level=0 duration=181 us
+105: level=1 duration=99 us, level=0 duration=50 us
+106: level=1 duration=403 us, level=0 duration=58 us
+107: level=1 duration=345 us, level=0 duration=166 us
+108: level=1 duration=172 us, level=0 duration=53 us
+109: level=1 duration=951 us, level=0 duration=44 us
+110: level=1 duration=308 us, level=0 duration=37 us
+111: level=1 duration=179 us, level=0 duration=53 us
+112: level=1 duration=296 us, level=0 duration=33 us
+113: level=1 duration=159 us, level=0 duration=148 us
+114: level=1 duration=128 us, level=0 duration=53 us
+115: level=1 duration=450 us, level=0 duration=104 us
+116: level=1 duration=355 us, level=0 duration=44 us
+117: level=1 duration=339 us, level=0 duration=39 us
+118: level=1 duration=714 us, level=0 duration=46 us
+119: level=1 duration=157 us, level=0 duration=48 us
+120: level=1 duration=305 us, level=0 duration=47 us
+121: level=1 duration=162 us, level=0 duration=103 us
+122: level=1 duration=224 us, level=0 duration=52 us
+123: level=1 duration=160 us, level=0 duration=91 us
+124: level=1 duration=198 us, level=0 duration=75 us
+125: level=1 duration=287 us, level=0 duration=51 us
+126: level=1 duration=350 us, level=0 duration=158 us
+127: level=1 duration=191 us, level=0 duration=66 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3375 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3382 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=8390 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3390 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3396 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=1 duration=0 us
+End frame
+
+
+Captured 79 RMT symbols:
+000: level=1 duration=534 us, level=0 duration=71 us
+001: level=1 duration=3478 us, level=0 duration=63 us
+002: level=1 duration=733 us, level=0 duration=32 us
+003: level=1 duration=2486 us, level=0 duration=69 us
+004: level=1 duration=1800 us, level=0 duration=50 us
+005: level=1 duration=189 us, level=0 duration=54 us
+006: level=1 duration=1456 us, level=0 duration=30 us
+007: level=1 duration=617 us, level=0 duration=47 us
+008: level=1 duration=538 us, level=0 duration=45 us
+009: level=1 duration=1104 us, level=0 duration=47 us
+010: level=1 duration=164 us, level=0 duration=28 us
+011: level=1 duration=1693 us, level=0 duration=41 us
+012: level=1 duration=2092 us, level=0 duration=41 us
+013: level=1 duration=1614 us, level=0 duration=55 us
+014: level=1 duration=6423 us, level=0 duration=55 us
+015: level=1 duration=1516 us, level=0 duration=52 us
+016: level=1 duration=632 us, level=0 duration=51 us
+017: level=1 duration=153 us, level=0 duration=128 us
+018: level=1 duration=1783 us, level=0 duration=30 us
+019: level=1 duration=476 us, level=0 duration=37 us
+020: level=1 duration=202 us, level=0 duration=73 us
+021: level=1 duration=533 us, level=0 duration=36 us
+022: level=1 duration=383 us, level=0 duration=51 us
+023: level=1 duration=154 us, level=0 duration=42 us
+024: level=1 duration=1220 us, level=0 duration=31 us
+025: level=1 duration=164 us, level=0 duration=30 us
+026: level=1 duration=387 us, level=0 duration=100 us
+027: level=1 duration=322 us, level=0 duration=47 us
+028: level=1 duration=1686 us, level=0 duration=66 us
+029: level=1 duration=925 us, level=0 duration=56 us
+030: level=1 duration=290 us, level=0 duration=67 us
+031: level=1 duration=224 us, level=0 duration=46 us
+032: level=1 duration=959 us, level=0 duration=48 us
+033: level=1 duration=573 us, level=0 duration=45 us
+034: level=1 duration=107 us, level=0 duration=70 us
+035: level=1 duration=305 us, level=0 duration=55 us
+036: level=1 duration=996 us, level=0 duration=61 us
+037: level=1 duration=901 us, level=0 duration=48 us
+038: level=1 duration=378 us, level=0 duration=48 us
+039: level=1 duration=184 us, level=0 duration=80 us
+040: level=1 duration=162 us, level=0 duration=50 us
+041: level=1 duration=158 us, level=0 duration=40 us
+042: level=1 duration=307 us, level=0 duration=82 us
+043: level=1 duration=488 us, level=0 duration=104 us
+044: level=1 duration=162 us, level=0 duration=60 us
+045: level=1 duration=381 us, level=0 duration=42 us
+046: level=1 duration=277 us, level=0 duration=46 us
+047: level=1 duration=156 us, level=0 duration=42 us
+048: level=1 duration=897 us, level=0 duration=54 us
+049: level=1 duration=447 us, level=0 duration=38 us
+050: level=1 duration=500 us, level=0 duration=51 us
+051: level=1 duration=592 us, level=0 duration=49 us
+052: level=1 duration=149 us, level=0 duration=66 us
+053: level=1 duration=253 us, level=0 duration=44 us
+054: level=1 duration=1120 us, level=0 duration=61 us
+055: level=1 duration=532 us, level=0 duration=60 us
+056: level=1 duration=530 us, level=0 duration=44 us
+057: level=1 duration=121 us, level=0 duration=60 us
+058: level=1 duration=881 us, level=0 duration=67 us
+059: level=1 duration=236 us, level=0 duration=64 us
+060: level=1 duration=173 us, level=0 duration=41 us
+061: level=1 duration=271 us, level=0 duration=42 us
+062: level=1 duration=762 us, level=0 duration=114 us
+063: level=1 duration=181 us, level=0 duration=43 us
+064: level=1 duration=1249 us, level=0 duration=63 us
+065: level=1 duration=392 us, level=0 duration=187 us
+066: level=1 duration=564 us, level=0 duration=86 us
+067: level=1 duration=2324 us, level=0 duration=43 us
+068: level=1 duration=705 us, level=0 duration=50 us
+069: level=1 duration=2087 us, level=0 duration=40 us
+070: level=1 duration=2206 us, level=0 duration=54 us
+071: level=1 duration=598 us, level=0 duration=46 us
+072: level=1 duration=636 us, level=0 duration=44 us
+073: level=1 duration=211 us, level=0 duration=96 us
+074: level=1 duration=296 us, level=0 duration=54 us
+075: level=1 duration=417 us, level=0 duration=90 us
+076: level=1 duration=104 us, level=0 duration=49 us
+077: level=1 duration=645 us, level=0 duration=69 us
+078: level=1 duration=3466 us, level=0 duration=0 us
+End frame
+
+
+Captured 9 RMT symbols:
+000: level=1 duration=66 us, level=0 duration=11312 us
+001: level=1 duration=74 us, level=0 duration=510 us
+002: level=1 duration=48 us, level=0 duration=2974 us
+003: level=1 duration=36 us, level=0 duration=921 us
+004: level=1 duration=37 us, level=0 duration=8215 us
+005: level=1 duration=115 us, level=0 duration=472 us
+006: level=1 duration=109 us, level=0 duration=370 us
+007: level=1 duration=70 us, level=0 duration=623 us
+008: level=1 duration=3390 us, level=0 duration=0 us
+End frame
+
+
+Captured 122 RMT symbols:
+000: level=1 duration=167 us, level=0 duration=41 us
+001: level=1 duration=1406 us, level=0 duration=45 us
+002: level=1 duration=746 us, level=0 duration=55 us
+003: level=1 duration=720 us, level=0 duration=56 us
+004: level=1 duration=546 us, level=0 duration=31 us
+005: level=1 duration=1407 us, level=0 duration=74 us
+006: level=1 duration=299 us, level=0 duration=32 us
+007: level=1 duration=142 us, level=0 duration=51 us
+008: level=1 duration=382 us, level=0 duration=48 us
+009: level=1 duration=148 us, level=0 duration=47 us
+010: level=1 duration=370 us, level=0 duration=184 us
+011: level=1 duration=439 us, level=0 duration=95 us
+012: level=1 duration=246 us, level=0 duration=45 us
+013: level=1 duration=896 us, level=0 duration=51 us
+014: level=1 duration=320 us, level=0 duration=134 us
+015: level=1 duration=652 us, level=0 duration=63 us
+016: level=1 duration=782 us, level=0 duration=41 us
+017: level=1 duration=165 us, level=0 duration=224 us
+018: level=1 duration=151 us, level=0 duration=328 us
+019: level=1 duration=243 us, level=0 duration=42 us
+020: level=1 duration=191 us, level=0 duration=235 us
+021: level=1 duration=197 us, level=0 duration=55 us
+022: level=1 duration=209 us, level=0 duration=118 us
+023: level=1 duration=305 us, level=0 duration=64 us
+024: level=1 duration=1261 us, level=0 duration=42 us
+025: level=1 duration=948 us, level=0 duration=56 us
+026: level=1 duration=541 us, level=0 duration=39 us
+027: level=1 duration=338 us, level=0 duration=51 us
+028: level=1 duration=359 us, level=0 duration=106 us
+029: level=1 duration=301 us, level=0 duration=76 us
+030: level=1 duration=125 us, level=0 duration=44 us
+031: level=1 duration=101 us, level=0 duration=49 us
+032: level=1 duration=382 us, level=0 duration=38 us
+033: level=1 duration=111 us, level=0 duration=47 us
+034: level=1 duration=308 us, level=0 duration=215 us
+035: level=1 duration=311 us, level=0 duration=52 us
+036: level=1 duration=143 us, level=0 duration=257 us
+037: level=1 duration=104 us, level=0 duration=48 us
+038: level=1 duration=310 us, level=0 duration=49 us
+039: level=1 duration=255 us, level=0 duration=38 us
+040: level=1 duration=92 us, level=0 duration=46 us
+041: level=1 duration=580 us, level=0 duration=36 us
+042: level=1 duration=147 us, level=0 duration=58 us
+043: level=1 duration=287 us, level=0 duration=76 us
+044: level=1 duration=250 us, level=0 duration=55 us
+045: level=1 duration=310 us, level=0 duration=54 us
+046: level=1 duration=410 us, level=0 duration=52 us
+047: level=1 duration=389 us, level=0 duration=57 us
+048: level=1 duration=334 us, level=0 duration=40 us
+049: level=1 duration=118 us, level=0 duration=46 us
+050: level=1 duration=272 us, level=0 duration=69 us
+051: level=1 duration=132 us, level=0 duration=67 us
+052: level=1 duration=164 us, level=0 duration=36 us
+053: level=1 duration=152 us, level=0 duration=129 us
+054: level=1 duration=79 us, level=0 duration=283 us
+055: level=1 duration=109 us, level=0 duration=561 us
+056: level=1 duration=401 us, level=0 duration=358 us
+057: level=1 duration=564 us, level=0 duration=51 us
+058: level=1 duration=318 us, level=0 duration=34 us
+059: level=1 duration=386 us, level=0 duration=54 us
+060: level=1 duration=339 us, level=0 duration=92 us
+061: level=1 duration=139 us, level=0 duration=29 us
+062: level=1 duration=803 us, level=0 duration=31 us
+063: level=1 duration=427 us, level=0 duration=51 us
+064: level=1 duration=266 us, level=0 duration=42 us
+065: level=1 duration=322 us, level=0 duration=66 us
+066: level=1 duration=400 us, level=0 duration=110 us
+067: level=1 duration=134 us, level=0 duration=62 us
+068: level=1 duration=232 us, level=0 duration=45 us
+069: level=1 duration=110 us, level=0 duration=105 us
+070: level=1 duration=260 us, level=0 duration=163 us
+071: level=1 duration=144 us, level=0 duration=39 us
+072: level=1 duration=198 us, level=0 duration=49 us
+073: level=1 duration=401 us, level=0 duration=39 us
+074: level=1 duration=332 us, level=0 duration=79 us
+075: level=1 duration=121 us, level=0 duration=123 us
+076: level=1 duration=154 us, level=0 duration=39 us
+077: level=1 duration=174 us, level=0 duration=127 us
+078: level=1 duration=129 us, level=0 duration=42 us
+079: level=1 duration=189 us, level=0 duration=126 us
+080: level=1 duration=224 us, level=0 duration=243 us
+081: level=1 duration=353 us, level=0 duration=190 us
+082: level=1 duration=198 us, level=0 duration=38 us
+083: level=1 duration=351 us, level=0 duration=41 us
+084: level=1 duration=159 us, level=0 duration=303 us
+085: level=1 duration=351 us, level=0 duration=125 us
+086: level=1 duration=229 us, level=0 duration=43 us
+087: level=1 duration=157 us, level=0 duration=70 us
+088: level=1 duration=135 us, level=0 duration=53 us
+089: level=1 duration=102 us, level=0 duration=109 us
+090: level=1 duration=35 us, level=0 duration=43 us
+091: level=1 duration=278 us, level=0 duration=37 us
+092: level=1 duration=241 us, level=0 duration=47 us
+093: level=1 duration=278 us, level=0 duration=70 us
+094: level=1 duration=247 us, level=0 duration=45 us
+095: level=1 duration=302 us, level=0 duration=102 us
+096: level=1 duration=808 us, level=0 duration=54 us
+097: level=1 duration=607 us, level=0 duration=47 us
+098: level=1 duration=371 us, level=0 duration=43 us
+099: level=1 duration=199 us, level=0 duration=338 us
+100: level=1 duration=115 us, level=0 duration=396 us
+101: level=1 duration=408 us, level=0 duration=43 us
+102: level=1 duration=137 us, level=0 duration=117 us
+103: level=1 duration=113 us, level=0 duration=63 us
+104: level=1 duration=470 us, level=0 duration=41 us
+105: level=1 duration=144 us, level=0 duration=38 us
+106: level=1 duration=160 us, level=0 duration=40 us
+107: level=1 duration=266 us, level=0 duration=69 us
+108: level=1 duration=180 us, level=0 duration=308 us
+109: level=1 duration=230 us, level=0 duration=148 us
+110: level=1 duration=195 us, level=0 duration=146 us
+111: level=1 duration=433 us, level=0 duration=42 us
+112: level=1 duration=175 us, level=0 duration=91 us
+113: level=1 duration=306 us, level=0 duration=332 us
+114: level=1 duration=163 us, level=0 duration=687 us
+115: level=1 duration=267 us, level=0 duration=299 us
+116: level=1 duration=201 us, level=0 duration=46 us
+117: level=1 duration=489 us, level=0 duration=164 us
+118: level=1 duration=155 us, level=0 duration=73 us
+119: level=1 duration=203 us, level=0 duration=45 us
+120: level=1 duration=218 us, level=0 duration=172 us
+121: level=1 duration=3941 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3941 us, level=1 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3941 us, level=0 duration=0 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=0 duration=42 us, level=1 duration=4312 us
+001: level=0 duration=0 us, level=1 duration=4312 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3362 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=4974 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=1 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3389 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=3416 us, level=0 duration=0 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=1 duration=3427 us, level=0 duration=4606 us
+001: level=1 duration=91 us, level=0 duration=0 us
+End frame
+
+
+Captured 3 RMT symbols:
+000: level=1 duration=53 us, level=0 duration=9841 us
+001: level=1 duration=106 us, level=0 duration=9559 us
+002: level=1 duration=62 us, level=0 duration=0 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=1 duration=73 us, level=0 duration=140 us
+001: level=1 duration=3392 us, level=0 duration=0 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=0 us, level=0 duration=0 us
+End frame
+
+
+Captured 18 RMT symbols:
+000: level=0 duration=58 us, level=1 duration=2793 us
+001: level=0 duration=46 us, level=1 duration=6262 us
+002: level=0 duration=74 us, level=1 duration=3296 us
+003: level=0 duration=57 us, level=1 duration=4916 us
+004: level=0 duration=45 us, level=1 duration=5945 us
+005: level=0 duration=36 us, level=1 duration=255 us
+006: level=0 duration=41 us, level=1 duration=615 us
+007: level=0 duration=61 us, level=1 duration=1449 us
+008: level=0 duration=135 us, level=1 duration=1078 us
+009: level=0 duration=55 us, level=1 duration=6317 us
+010: level=0 duration=43 us, level=1 duration=1898 us
+011: level=0 duration=42 us, level=1 duration=7309 us
+012: level=0 duration=66 us, level=1 duration=531 us
+013: level=0 duration=151 us, level=1 duration=509 us
+014: level=0 duration=36 us, level=1 duration=2929 us
+015: level=0 duration=47 us, level=1 duration=1515 us
+016: level=0 duration=57 us, level=1 duration=5380 us
+017: level=0 duration=0 us, level=1 duration=5380 us
+End frame
+
+
+Captured 9 RMT symbols:
+000: level=0 duration=42 us, level=1 duration=1024 us
+001: level=0 duration=75 us, level=1 duration=273 us
+002: level=0 duration=60 us, level=1 duration=293 us
+003: level=0 duration=100 us, level=1 duration=612 us
+004: level=0 duration=71 us, level=1 duration=160 us
+005: level=0 duration=41 us, level=1 duration=1856 us
+006: level=0 duration=43 us, level=1 duration=1990 us
+007: level=0 duration=43 us, level=1 duration=5733 us
+008: level=0 duration=0 us, level=1 duration=5733 us
+End frame
+
+
+Captured 2 RMT symbols:
+000: level=0 duration=36 us, level=1 duration=1774 us
+001: level=0 duration=60 us, level=1 duration=0 us
+End frame
+
+
+Captured 6 RMT symbols:
+000: level=0 duration=51 us, level=1 duration=5209 us
+001: level=0 duration=45 us, level=1 duration=1224 us
+002: level=0 duration=57 us, level=1 duration=4093 us
+003: level=0 duration=44 us, level=1 duration=669 us
+004: level=0 duration=45 us, level=1 duration=3656 us
+005: level=0 duration=0 us, level=1 duration=3656 us
+End frame
+
+
+Captured 37 RMT symbols:
+000: level=1 duration=36 us, level=0 duration=1319 us
+001: level=1 duration=121 us, level=0 duration=771 us
+002: level=1 duration=125 us, level=0 duration=1029 us
+003: level=1 duration=91 us, level=0 duration=261 us
+004: level=1 duration=91 us, level=0 duration=88 us
+005: level=1 duration=117 us, level=0 duration=1128 us
+006: level=1 duration=90 us, level=0 duration=133 us
+007: level=1 duration=130 us, level=0 duration=836 us
+008: level=1 duration=123 us, level=0 duration=789 us
+009: level=1 duration=98 us, level=0 duration=2895 us
+010: level=1 duration=223 us, level=0 duration=1665 us
+011: level=1 duration=137 us, level=0 duration=499 us
+012: level=1 duration=102 us, level=0 duration=5844 us
+013: level=1 duration=100 us, level=0 duration=41 us
+014: level=1 duration=162 us, level=0 duration=1155 us
+015: level=1 duration=96 us, level=0 duration=1191 us
+016: level=1 duration=81 us, level=0 duration=183 us
+017: level=1 duration=147 us, level=0 duration=3100 us
+018: level=1 duration=168 us, level=0 duration=146 us
+019: level=1 duration=167 us, level=0 duration=61 us
+020: level=1 duration=116 us, level=0 duration=718 us
+021: level=1 duration=106 us, level=0 duration=80 us
+022: level=1 duration=199 us, level=0 duration=403 us
+023: level=1 duration=84 us, level=0 duration=3701 us
+024: level=1 duration=164 us, level=0 duration=1775 us
+025: level=1 duration=152 us, level=0 duration=460 us
+026: level=1 duration=72 us, level=0 duration=2213 us
+027: level=1 duration=92 us, level=0 duration=76 us
+028: level=1 duration=148 us, level=0 duration=941 us
+029: level=1 duration=124 us, level=0 duration=80 us
+030: level=1 duration=103 us, level=0 duration=1328 us
+031: level=1 duration=70 us, level=0 duration=415 us
+032: level=1 duration=122 us, level=0 duration=542 us
+033: level=1 duration=114 us, level=0 duration=60 us
+034: level=1 duration=121 us, level=0 duration=736 us
+035: level=1 duration=86 us, level=0 duration=326 us
+036: level=1 duration=3396 us, level=0 duration=0 us
+End frame
+
+
+Captured 28 RMT symbols:
+000: level=0 duration=41 us, level=1 duration=2364 us
+001: level=0 duration=39 us, level=1 duration=478 us
+002: level=0 duration=58 us, level=1 duration=2812 us
+003: level=0 duration=68 us, level=1 duration=2941 us
+004: level=0 duration=60 us, level=1 duration=1586 us
+005: level=0 duration=52 us, level=1 duration=859 us
+006: level=0 duration=157 us, level=1 duration=480 us
+007: level=0 duration=44 us, level=1 duration=273 us
+008: level=0 duration=147 us, level=1 duration=178 us
+009: level=0 duration=59 us, level=1 duration=671 us
+010: level=0 duration=31 us, level=1 duration=895 us
+011: level=0 duration=73 us, level=1 duration=173 us
+012: level=0 duration=67 us, level=1 duration=93 us
+013: level=0 duration=38 us, level=1 duration=449 us
+014: level=0 duration=38 us, level=1 duration=314 us
+015: level=0 duration=62 us, level=1 duration=124 us
+016: level=0 duration=78 us, level=1 duration=706 us
+017: level=0 duration=50 us, level=1 duration=304 us
+018: level=0 duration=58 us, level=1 duration=339 us
+019: level=0 duration=51 us, level=1 duration=295 us
+020: level=0 duration=46 us, level=1 duration=194 us
+021: level=0 duration=51 us, level=1 duration=375 us
+022: level=0 duration=44 us, level=1 duration=146 us
+023: level=0 duration=152 us, level=1 duration=108 us
+024: level=0 duration=70 us, level=1 duration=113 us
+025: level=0 duration=303 us, level=1 duration=388 us
+026: level=0 duration=56 us, level=1 duration=3878 us
+027: level=0 duration=0 us, level=1 duration=3878 us
+End frame
+
+
+Captured 1 RMT symbols:
+000: level=1 duration=8388 us, level=0 duration=0 us
+End frame
