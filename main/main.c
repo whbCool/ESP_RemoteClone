@@ -36,12 +36,32 @@ static rmt_symbol_word_t tx_symbols[RF_COMMAND_BITS + 1];
 // the button. These are pulse-width symbols, with '1' meaning long/short
 // and '0' meaning short/long.
 // Exact 25-symbol power-on packet from the clean single-press capture.
-static const char *POWER_ON_BITS  = "1111111111111111000010000";
-static const char *POWER_OFF_BITS = "1111111111111111000001111";
-static const char *FLASH_BITS     = "1111111111111111000100001";
-static const char *STROBE_BITS    = "1111111111111111000101001";
-static const char *FADE_BITS      = "1111111111111111000110001";
-static const char *SMOOTH_BITS    = "1111111111111111000111001";
+static const char *POWER_ON_BITS   = "1111111111111111000010000";
+static const char *POWER_OFF_BITS  = "1111111111111111000001110";
+static const char *FLASH_BITS      = "1111111111111111000100000";
+static const char *STROBE_BITS     = "1111111111111111000101000";
+static const char *FADE_BITS       = "1111111111111111000110000";
+static const char *SMOOTH_BITS     = "1111111111111111000111000";
+static const char *BRIGHT_UP_BITS  = "1111111111111111000001010";
+static const char *BRIGHT_DOWN_BITS = "1111111111111111000001100";
+static const char *WHITE_BITS      = "1111111111111111000011000";
+
+// Color-grid commands, named by row-column position on the remote.
+static const char *COLOR_1_1_BITS = "1111111111111111000010010"; // Red
+static const char *COLOR_1_2_BITS = "1111111111111111000010100"; // Green
+static const char *COLOR_1_3_BITS = "1111111111111111000010110"; // Blue
+static const char *COLOR_2_1_BITS = "1111111111111111000011010";
+static const char *COLOR_2_2_BITS = "1111111111111111000011100";
+static const char *COLOR_2_3_BITS = "1111111111111111000011110";
+static const char *COLOR_3_1_BITS = "1111111111111111000100010";
+static const char *COLOR_3_2_BITS = "1111111111111111000100100";
+static const char *COLOR_3_3_BITS = "1111111111111111000100110";
+static const char *COLOR_4_1_BITS = "1111111111111111000101010";
+static const char *COLOR_4_2_BITS = "1111111111111111000101100";
+static const char *COLOR_4_3_BITS = "1111111111111111000101110";
+static const char *COLOR_5_1_BITS = "1111111111111111000110010";
+static const char *COLOR_5_2_BITS = "1111111111111111000110100";
+static const char *COLOR_5_3_BITS = "1111111111111111000110110";
 
 typedef struct {
     rmt_rx_done_event_data_t received;
@@ -224,6 +244,14 @@ void app_main(void)
     ESP_LOGI(TAG, "Commands loaded: on=%s off=%s flash=%s strobe=%s fade=%s smooth=%s",
              POWER_ON_BITS, POWER_OFF_BITS, FLASH_BITS, STROBE_BITS,
              FADE_BITS, SMOOTH_BITS);
+    ESP_LOGI(TAG, "Additional commands: bright_up=%s bright_down=%s white=%s",
+             BRIGHT_UP_BITS, BRIGHT_DOWN_BITS, WHITE_BITS);
+    ESP_LOGI(TAG, "Color commands loaded: %s %s %s %s %s %s %s %s %s %s %s %s %s %s %s",
+             COLOR_1_1_BITS, COLOR_1_2_BITS, COLOR_1_3_BITS,
+             COLOR_2_1_BITS, COLOR_2_2_BITS, COLOR_2_3_BITS,
+             COLOR_3_1_BITS, COLOR_3_2_BITS, COLOR_3_3_BITS,
+             COLOR_4_1_BITS, COLOR_4_2_BITS, COLOR_4_3_BITS,
+             COLOR_5_1_BITS, COLOR_5_2_BITS, COLOR_5_3_BITS);
 
     BaseType_t task_created = xTaskCreate(
         transmitter_task,
